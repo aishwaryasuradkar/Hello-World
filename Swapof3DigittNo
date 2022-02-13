@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        int a,b,c,n;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 3 digit number:");
+        n=sc.nextInt();
+        a=n%10;
+        n=n/10;
+        b=n%10;
+        n=n/10;
+        c=n%10;
+        n=a*100+b*10+c*1;
+        System.out.println(n);
+    }
+}
