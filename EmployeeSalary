@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+      double bs,da,hra,total;
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter the basic salary of the employee:");
+      bs=sc.nextDouble();
+      da=bs*0.2;
+      hra=bs*0.4;
+      total=bs+da+hra;
+      System.out.println("Total salary is:" +total);
+      
+    }
+}
