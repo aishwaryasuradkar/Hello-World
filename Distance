@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+       double meter,feet,inches,cms;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the distance in meter:");
+       meter=sc.nextDouble();
+       feet=meter*3.2;
+       inches=meter*39.37;
+       cms=meter*100;
+       System.out.println("Foot:" +feet);
+       System.out.println("Iches:" +inches);
+       System.out.println("Cms:" +cms);
+    }
+}
