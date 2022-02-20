@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        String a;
+        char ch;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter data:");
+        a=sc.next();
+        ch=a.charAt(0);
+      {
+       if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z')){
+            System.out.println("It is an alphabet");
+        }
+        else if(ch>='0' && ch<='9'){
+            System.out.println("It is a digit");
+        }
+        else{
+            System.out.println("It is a special character");
+        }
+       }
+    }
+}
