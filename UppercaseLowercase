@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        String s1;
+        char ch;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a character:");
+        s1=sc.next();
+        ch=s1.charAt(0);
+        if(ch>='A' && ch<='Z'){
+            System.out.println("It is an uppercase alphabet");
+        }
+        else{
+            System.out.println("It is a lowercase alphabet");
+        }
+    }
+}
