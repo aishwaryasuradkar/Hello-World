@@ -1,0 +1,25 @@
+class Test1{
+    int i;
+    static int j;
+    void setI(){
+        i=i+1;
+        j=j+1;
+    }
+    void show(){
+        System.out.println(i+ " "+j);
+    }
+}
+public class NewClass1 {
+    public static void main(String[] args){
+        Test1 t1=new Test1();
+        Test1 t2=new Test1();
+        Test1 t3=new Test1();
+        t1.setI();
+        t2.setI();
+        t3.setI();
+        t1.show();
+        t2.show();
+        t3.show();
+        System.out.println("Test1.j");
+    }
+}
