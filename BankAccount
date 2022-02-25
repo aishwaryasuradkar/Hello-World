@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class Account{
+    int accnum;
+    String name;
+    float balance;
+    void CreateAccount(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter account number:");
+        accnum=sc.nextInt();
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter name:");
+        name=s.next();
+        Scanner c=new Scanner(System.in);
+        System.out.println("Enter balance:");
+        balance=c.nextFloat();
+    }
+    void deposit(){
+        float amt;
+        System.out.println("Enter amount to be deposited:");
+        Scanner sc=new Scanner(System.in);
+        amt=sc.nextFloat();
+        balance=balance+amt;
+    }
+    void withdraw(){
+        float amt;
+        System.out.println("Enter amount to be withdrwaned:");
+        Scanner sc=new Scanner(System.in);
+        amt=sc.nextFloat();
+        balance=balance-amt;
+    }
+    void print(){
+        System.out.println("######################");
+        System.out.println("Account number is:" +accnum);
+        System.out.println("Name is:" +name);
+        System.out.println("Total balance is:" +balance);
+        System.out.println("######################");
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+        Account ob1=new Account();
+        ob1.CreateAccount();
+        ob1.deposit();
+        ob1.print();
+        ob1.withdraw();
+        ob1.print();
+    }
+}
