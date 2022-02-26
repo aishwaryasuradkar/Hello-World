@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Info{
+    String name;
+    double sdist,rgravity;
+    void PlanetInfo(){
+        Scanner s1=new Scanner(System.in);
+        System.out.println("Name of the planet is:");
+        name=s1.next();
+        Scanner s2=new Scanner(System.in);
+        System.out.println("Distance from the sun is:");
+        sdist=s2.nextDouble();
+        Scanner s3=new Scanner(System.in);
+        System.out.println("relative gracity to earth is:");
+        rgravity=s3.nextDouble();
+    }
+    void show(){
+        System.out.println("Name of the planet is: " +name);
+        System.out.println("Distance from the sun is: " +sdist);
+        System.out.println("Relative gravity to the earth is: " +rgravity);
+    }
+}
+public class Planets {
+    public static void main(String[] args) {
+        Info sc1=new Info();
+        Info sc2=new Info();
+        sc1.PlanetInfo();
+        sc1.show();
+        sc2.PlanetInfo();
+        sc2.show();
+
+    }
+}
