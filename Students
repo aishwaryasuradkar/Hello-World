@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class StudInfo {
+    int cyear;
+    String fname,lname,major;
+    //actions
+    void Info(){
+        Scanner s1=new Scanner(System.in);
+        System.out.println("Enter the first name:");
+        fname=s1.next();
+        Scanner s2=new Scanner(System.in);
+        System.out.println("Enter the last name:");
+        lname=s2.next();
+        Scanner s3=new Scanner(System.in);
+        System.out.println("Enter the class year:");
+        cyear=s3.nextInt();
+        Scanner s4=new Scanner(System.in);
+        System.out.println("Enter the subject major:");
+        major=s4.next();
+    }
+    void show(){
+        System.out.println("First name is: " +fname);
+        System.out.println("Last name is: " +lname);
+        System.out.println("Class year is: " +cyear);
+        System.out.println("Subject major: "+major);
+    }
+}
+public class Students{
+    public static void main(String[] args) {
+        StudInfo si1=new StudInfo();
+        StudInfo si2=new StudInfo();
+        si1.Info();
+        si1.show();
+        si2.Info();
+        si2.show();
+    }
+}
