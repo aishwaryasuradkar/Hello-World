@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class TicketInfo {
+    int fnumber;
+    String s1,s2,s3;
+    void Info(){
+        Scanner sc1 =new Scanner(System.in);
+        System.out.println("Enter flight number:");
+        fnumber=sc1.nextInt();
+        Scanner sc2 =new Scanner(System.in);
+        System.out.println("Enter sit arrangement:");
+        s1=sc2.next();
+        Scanner sc3 =new Scanner(System.in);
+        System.out.println("Enter arrive city:");
+        s2=sc3.next();
+        Scanner sc4 =new Scanner(System.in);
+        System.out.println("Enter departure city:");
+        s3=sc4.next();
+    }
+    void show(){
+        System.out.println("################################");
+        System.out.println("Flight number is: " +fnumber);
+        System.out.println("Seat arrangement is: " +s1);
+        System.out.println("Arriving city is: " +s2);
+        System.out.println("Departure city is: " +s3);
+        System.out.println("################################");
+
+    }
+
+}
+public class Tickets {
+    public static void main(String[] args) {
+        TicketInfo ob1=new TicketInfo();
+        TicketInfo ob2=new TicketInfo();
+        ob1.Info();
+        ob1.show();
+        ob2.Info();
+        ob2.show();
+    }
+}
