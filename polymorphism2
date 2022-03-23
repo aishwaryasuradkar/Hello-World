@@ -1,0 +1,22 @@
+class Demo{
+    void add(int x, int y) {
+        System.out.println("Int add method is called:");
+        System.out.println(x+y);
+    }
+    void add(float x,float y){
+        System.out.println("float add method is called:");
+        System.out.println(x+y);
+    }
+    void add(int x,int y,int z){
+        System.out.println("int add method is called:");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Demo ob=new Demo();
+        ob.add(10,20);
+        ob.add(10.1f,20.1f);
+        ob.add(10,20,30);
+
+    }
+}
