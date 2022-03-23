@@ -1,0 +1,28 @@
+abstract class acc{
+    void getCustInfo(){
+        System.out.println("Get customer information");
+    }
+    abstract void CalculateInterest();
+}
+class savings extends acc{
+    @Override
+    void CalculateInterest() {
+        System.out.println("Calculate interest of savings");
+    }
+}
+class loan extends acc{
+    @Override
+    void CalculateInterest() {
+        System.out.println("Calculate interest of loan");
+    }
+}
+public class account {
+    public static void main(String[] args) {
+        savings ob1=new savings();
+        ob1.getCustInfo();
+        ob1.CalculateInterest();
+        loan ob2=new loan();
+        ob2.getCustInfo();
+        ob2.CalculateInterest();
+    }
+}
