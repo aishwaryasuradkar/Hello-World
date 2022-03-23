@@ -1,0 +1,21 @@
+abstract class A{
+    void show(){
+        System.out.println("In A");
+    }
+    abstract void add(int x,int y);
+}
+class B extends A{
+    @Override
+    void add(int x, int y) {
+        System.out.println(x+y);
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        B ob=new B();
+        ob.add(10,20);
+        ob.show();
+    }
+}
